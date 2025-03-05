@@ -24,7 +24,7 @@ chmod 644 ~/.ssh/id_rsa.pub
 ```
 
 
-# SSH Config ซักนิด
+# SSH Config
 - ใช้ SSH หลายๆ Key เช่น Gitub / Gitlab / Bicbucket และ Hosting แยกกันไปเลย
 ```bash
 ~/.ssh/config 
