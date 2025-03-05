@@ -22,3 +22,20 @@ ssh -T git@github.com
 chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 ```
+
+
+# SSH Config ซักนิด
+- ใช้ SSH หลายๆ Key เช่น Gitub / Gitlab / Bicbucket และ Hosting แยกกันไปเลย
+```bash
+~/.ssh/config 
+```
+-- มี 2 account ใช้ github ผมก็จะแยกแบบนี้
+```bash
+Host github.com
+  User git
+  IdentityFile ~/.ssh/github
+
+Host github.com-work
+  User git
+  IdentityFile ~/.ssh/github_work
+```
