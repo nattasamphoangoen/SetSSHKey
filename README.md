@@ -1,4 +1,5 @@
 # into
+
 ```bash
 ssh -V
 # OpenSSH_6.9p1, LibreSSL 2.1.8
@@ -7,7 +8,8 @@ cd ~/.ssh
 
 ```
 
-# SetSSHKey for Ubuntu 
+# SetSSHKey for Ubuntu
+
 ```bash
 # Generate new SSH Key
 ssh-keygen -t rsa -b 4096 -C "EMAIL"
@@ -31,13 +33,17 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 ```
 
-
 # SSH Config
-- ใช้ SSH หลายๆ Key เช่น Gitub / Gitlab / Bicbucket และ Hosting แยกกันไปเลย
+
+- ใช้ SSH หลายๆ Key เช่น Gitub / Gitlab / Bicbucket และ Hosting แยกกัน
+- ถ้าสร้าง id file ไม่เป็นปกติ(id_rsa) ให้สร้าง config file
+
 ```bash
-~/.ssh/config 
+~/.ssh/config
 ```
+
 -- มี 2 account ใช้ github ผมก็จะแยกแบบนี้
+
 ```bash
 Host github.com
   User git
