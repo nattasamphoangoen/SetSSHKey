@@ -1,5 +1,13 @@
-# SetSSHKey for Ubuntu 
+# into
+```bash
+ssh -V
+# OpenSSH_6.9p1, LibreSSL 2.1.8
+mkdir -p ~/.ssh
+cd ~/.ssh
 
+```
+
+# SetSSHKey for Ubuntu 
 ```bash
 # Generate new SSH Key
 ssh-keygen -t rsa -b 4096 -C "EMAIL"
