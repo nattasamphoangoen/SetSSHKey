@@ -54,7 +54,7 @@ ssh -T -p 2224 -i ~/.ssh/id_rsa_gitea git@localhost
 mkdir -p ~/.ssh/config
 ```
 
--- มี 2 account ใช้ github ผมก็จะแยกแบบนี้
+- มี 2 account ใช้ github ผมก็จะแยกแบบนี้
 
 ```bash
 Host github-local
