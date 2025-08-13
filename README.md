@@ -57,11 +57,20 @@ mkdir -p ~/.ssh/config
 -- มี 2 account ใช้ github ผมก็จะแยกแบบนี้
 
 ```bash
-Host github.com
+Host github-local
+  HostName github.com
   User git
   IdentityFile ~/.ssh/github
 
-Host github.com-work
+Host github-work
+  HostName github.com
   User git
   IdentityFile ~/.ssh/github_work
+
+Host localhost
+  HostName localhost
+  Port 222
+  User git
+  IdentityFile ~/.ssh/id_rsa_gitea
+
 ```
