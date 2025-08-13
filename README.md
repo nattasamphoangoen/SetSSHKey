@@ -33,7 +33,7 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 ```
 
-## Test/Verify ว่า SSH เรา connect ไปที่ target ได้ตรงมั้ยด้วยคำสั่งนี้ (ตัวอย่าง Github)
+## Test/Verify ว่า SSH เรา connect ไปที่ target ได้ (ตัวอย่าง Github)
 ```bash
 ssh -T git@github.com
 
