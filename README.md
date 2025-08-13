@@ -45,6 +45,9 @@ ssh -T git@github.com
 
 ```bash
 ~/.ssh/config
+
+# if no hve config flie
+mkdir -p ~/.ssh/config
 ```
 
 -- มี 2 account ใช้ github ผมก็จะแยกแบบนี้
