@@ -23,7 +23,7 @@ ssh-add -K ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
 
 # Add new SSH key to Github or Other Providers (public key)
-cat ~/.ssh.id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 
 # Verify
 ssh -T git@github.com
