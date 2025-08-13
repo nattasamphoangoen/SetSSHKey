@@ -1,4 +1,4 @@
-# into
+# Info | Recommend using Git Bash
 
 ```bash
 ssh -V
@@ -12,7 +12,7 @@ cd ~/.ssh
 
 ```bash
 # Generate new SSH Key
-ssh-keygen -t rsa -b 4096 -C "EMAIL"
+ssh-keygen -t rsa -b 4096 -C "Your E-MAIL"
 
 # Start ssh agent
 eval "$(ssh-agent -s)"
