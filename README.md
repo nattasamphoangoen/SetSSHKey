@@ -36,6 +36,10 @@ chmod 644 ~/.ssh/id_rsa.pub
 ## Test/Verify ว่า SSH เรา connect ไปที่ target ได้ตรงมั้ยด้วยคำสั่งนี้ (ตัวอย่าง Github)
 ```bash
 ssh -T git@github.com
+
+# Verify use port
+ssh -T -p 2224 -i ~/.ssh/id_rsa_gitea git@localhost
+
 ```
 
 # SSH Config use multiple SSH Key
