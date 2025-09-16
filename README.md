@@ -77,11 +77,11 @@ Host localhost
 
 - กรณี เครือข่าย/องค์กร “บล็อกพอร์ต 22” ทำให้ใช้ SSH ไม่ได้
 - ผู้ให้บริการเลยมี “ช่องสำรองผ่านพอร์ต 443” (พอร์ตเดียวกับ HTTPS) โดยเปิด sshd ไว้อีก “โฮสต์พิเศษ”
-Bitbucket Cloud → altssh.bitbucket.org:443
+- Bitbucket Cloud → altssh.bitbucket.org:443
 (โฮสต์ปกติ bitbucket.org:443 เป็นเว็บ HTTPS ไม่ใช่ SSH — ถ้า SSH ไปที่นี่จะเจอ error “invalid format/baaner” แบบที่คุณเจอ)
-GitHub → ssh.github.com:443
+- GitHub → ssh.github.com:443
 (แยกจาก github.com:443 ที่เป็นเว็บ)
-ดังนั้นจึงต้อง “ใส่ altssh.” (Bitbucket) และ “ใส่ ssh.” (GitHub) เพื่อให้ SSH client ไปคุยกับพอร์ต 443 ที่เปิดบริการ SSH จริง ๆ ไม่ใช่เว็บ
+- ดังนั้นจึงต้อง “ใส่ altssh.” (Bitbucket) และ “ใส่ ssh.” (GitHub) เพื่อให้ SSH client ไปคุยกับพอร์ต 443 ที่เปิดบริการ SSH จริง ๆ ไม่ใช่เว็บ
 ```bash
 # แม็ปผ่าน ~/.ssh/config
 # Bitbucket: ใช้ git@bitbucket.org ตามปกติ แต่ให้ไป altssh:443
