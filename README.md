@@ -37,6 +37,9 @@ chmod 644 ~/.ssh/id_rsa.pub
 ```bash
 ssh -T git@github.com
 
+#Verify check log
+ssh -vT git@<Host>
+
 # Verify use port
 ssh -T -p 2224 -i ~/.ssh/id_rsa_gitea git@localhost
 
